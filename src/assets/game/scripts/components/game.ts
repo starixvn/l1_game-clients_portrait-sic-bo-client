@@ -34,9 +34,6 @@ export default class Game extends GameComponent {
     @property(Node)
     nodeWinning: Node = null;
 
-    @property(Node)
-    nodeBaccaratCardsUi: Node = null;
-
     baccaratCardsUi: BaccaratCardsUI = null;
 
     protected enableFixHandleFinish = true;
@@ -47,7 +44,6 @@ export default class Game extends GameComponent {
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
-        this.baccaratCardsUi = this.nodeBaccaratCardsUi.getComponent(BaccaratCardsUI);
         this.winningResult = this.nodeWinning.getComponent(WinningResult);
         super.onLoad();
     }
