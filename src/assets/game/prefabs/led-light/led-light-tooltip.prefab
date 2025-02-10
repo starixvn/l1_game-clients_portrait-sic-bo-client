@@ -29,13 +29,10 @@
     "_components": [
       {
         "__id__": 58
-      },
-      {
-        "__id__": 60
       }
     ],
     "_prefab": {
-      "__id__": 62
+      "__id__": 60
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -1023,8 +1020,8 @@
     },
     "_alignFlags": 45,
     "_target": null,
-    "_left": 0,
-    "_right": 0,
+    "_left": -182.2496337890625,
+    "_right": -182.2496337890625,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -1110,7 +1107,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 541.988525390625,
+      "width": 177.4892578125,
       "height": 66.54799999999999
     },
     "_anchorPoint": {
@@ -1409,36 +1406,6 @@
   {
     "__type__": "cc.CompPrefabInfo",
     "fileId": "18pfLjH4BKyYgWpLf83JAj"
-  },
-  {
-    "__type__": "9777eZg/6VI2KtHtJ1GB9r8",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "__prefab": {
-      "__id__": 61
-    },
-    "result": {
-      "__id__": 7
-    },
-    "roundId": {
-      "__id__": 55
-    },
-    "lblPlayerTotalPoint": {
-      "__id__": 17
-    },
-    "lblBankerTotalPoint": {
-      "__id__": 33
-    },
-    "_id": ""
-  },
-  {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "7bwALsxQVG9brtF3WhQLhA"
   },
   {
     "__type__": "cc.PrefabInfo",
