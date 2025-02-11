@@ -203,7 +203,7 @@ export const languages = {
         "double": "Dobel",
         "game_icon_name": "Sic Bo",
         "game_name": "Sic Bo",
-        "option_any_triple": "Tripel apa saja",
+        "option_anyTriple": "Tripel apa saja",
         "option_big": "Besar",
         "option_small": "Kecil",
         "single": "Single",

@@ -203,7 +203,7 @@ export const languages = {
         "double": "双倍",
         "game_icon_name": "骰宝",
         "game_name": "骰宝",
-        "option_any_triple": "任何三重",
+        "option_anyTriple": "任何三重",
         "option_big": "大",
         "option_small": "小",
         "single": "单",

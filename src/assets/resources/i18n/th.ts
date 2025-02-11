@@ -203,7 +203,7 @@ export const languages = {
         "double": "สองเท่า",
         "game_icon_name": "Sic Bo",
         "game_name": "Sic Bo",
-        "option_any_triple": "ตองใดๆ",
+        "option_anyTriple": "ตองใดๆ",
         "option_big": "ใหญ่",
         "option_small": "เล็ก",
         "single": "เดี่ยว",
