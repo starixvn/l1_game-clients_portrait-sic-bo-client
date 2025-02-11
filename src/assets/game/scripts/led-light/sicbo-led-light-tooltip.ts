@@ -20,7 +20,7 @@ export class SicboLedLightTooltip extends LedLightTooltip {
 
         this.mainChoice.forEach((choice) => {
             if (settlementResult[choice]) {
-                this.result.string = gc.Translator.gameTranslate(choice);
+                this.result.string = gc.Translator.gameTranslate(`option_${choice}`);
             }
         });
     }
