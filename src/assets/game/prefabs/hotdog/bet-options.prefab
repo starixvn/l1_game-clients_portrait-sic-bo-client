@@ -53,10 +53,13 @@
       },
       {
         "__id__": 874
+      },
+      {
+        "__id__": 876
       }
     ],
     "_prefab": {
-      "__id__": 876
+      "__id__": 878
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -266,7 +269,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -2005,7 +2008,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -3742,7 +3745,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -5655,7 +5658,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -7624,7 +7627,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -9593,7 +9596,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -11559,7 +11562,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -13417,7 +13420,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -14081,7 +14084,7 @@
     "__prefab": {
       "__id__": 629
     },
-    "key": "SicBo.option_any_triple",
+    "key": "SicBo.option_anyTriple",
     "format": 1,
     "prefix": "",
     "suffix": "",
@@ -17858,7 +17861,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@4496e",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -19583,6 +19586,51 @@
     "fileId": "bfQ2ZeEexAILVTWdqsxBJf"
   },
   {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 877
+    },
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@aff0f",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 1,
+    "_fillType": 0,
+    "_sizeMode": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "0fYu6jLaRNK6r9gd+6vAas"
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -19591,7 +19639,7 @@
       "__id__": 0
     },
     "fileId": "aeW3ULgKdDtqqKK8Y8rX1T",
-    "targetOverrides": null,
+    "instance": null,
     "nestedPrefabInstanceRoots": [
       {
         "__id__": 451
