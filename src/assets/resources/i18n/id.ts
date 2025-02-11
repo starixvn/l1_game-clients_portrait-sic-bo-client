@@ -199,21 +199,13 @@ export const languages = {
         "win_loss": "Menang Kalah",
         "you_reach_max_win": "Anda mencapai Maksimal Menang"
     },
-    "Baccarat": {
-        "banker_win": "Banker Menang!",
-        "game_icon_name": "Bakarat",
-        "game_name": "Bakarat",
-        "glossary_banker": "Banker",
-        "glossary_banker_pair": "Banker pair",
-        "glossary_big": "Besar",
-        "glossary_player": "Player",
-        "glossary_player_pair": "Player Pair",
-        "glossary_small": "Kecil",
-        "glossary_tie": "Seri",
-        "player_win": "PLAYER MENANG",
-        "short_banker": "B",
-        "short_player": "P",
-        "tie_win": "SERI"
+    "SicBo": {
+        "double": "Dobel",
+        "option_big": "Besar",
+        "option_small": "Kecil",
+        "single": "Single",
+        "specific_number": "Nomor Spesifik",
+        "triple": "Tripel"
     }
 };
 

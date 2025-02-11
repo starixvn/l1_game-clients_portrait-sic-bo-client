@@ -199,21 +199,13 @@ export const languages = {
         "win_loss": "Thắng Thua",
         "you_reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa"
     },
-    "Baccarat": {
-        "banker_win": "Nhà Cái Thắng",
-        "game_icon_name": "Cào Baccarat",
-        "game_name": "Cào Baccarat",
-        "glossary_banker": "Nhà Cái",
-        "glossary_banker_pair": "Cái Đôi",
-        "glossary_big": "Tài",
-        "glossary_player": "Người Chơi",
-        "glossary_player_pair": "Con Đôi",
-        "glossary_small": "Xỉu",
-        "glossary_tie": "Hòa",
-        "player_win": "NHÀ CON THẮNG",
-        "short_banker": "B",
-        "short_player": "P",
-        "tie_win": "HÒA"
+    "SicBo": {
+        "double": "Đôi",
+        "option_big": "Tài",
+        "option_small": "Xỉu",
+        "single": "Đơn",
+        "specific_number": "Cược số",
+        "triple": "Bộ Ba"
     }
 };
 

@@ -199,21 +199,13 @@ export const languages = {
         "win_loss": "ชนะ แพ้",
         "you_reach_max_win": "คุณถึงยอดชนะสูงสุด"
     },
-    "Baccarat": {
-        "banker_win": "เจ้ามือชนะ!",
-        "game_icon_name": "บาคาร่า",
-        "game_name": "บาคาร่า",
-        "glossary_banker": "เจ้ามือ",
-        "glossary_banker_pair": "คู่เจ้ามือ",
-        "glossary_big": "ใหญ่",
-        "glossary_player": "ผู้เล่น",
-        "glossary_player_pair": "คู่ผู้เล่น",
-        "glossary_small": "เล็ก",
-        "glossary_tie": "เสมอ",
-        "player_win": "ผู้้เล่นชนะ",
-        "short_banker": "B",
-        "short_player": "P",
-        "tie_win": "เสมอ"
+    "SicBo": {
+        "double": "สองเท่า",
+        "option_big": "ใหญ่",
+        "option_small": "เล็ก",
+        "single": "เดี่ยว",
+        "specific_number": "หมายเลขเฉพาะ",
+        "triple": "สามเท่า"
     }
 };
 

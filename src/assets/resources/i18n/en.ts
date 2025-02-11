@@ -199,21 +199,13 @@ export const languages = {
         "win_loss": "Win Loss",
         "you_reach_max_win": "You reached the max win"
     },
-    "Baccarat": {
-        "banker_win": "BANKER WIN",
-        "game_icon_name": "Baccarat",
-        "game_name": "Baccarat",
-        "glossary_banker": "Banker",
-        "glossary_banker_pair": "Banker pair",
-        "glossary_big": "Big",
-        "glossary_player": "Player",
-        "glossary_player_pair": "Player pair",
-        "glossary_small": "Small",
-        "glossary_tie": "Tie",
-        "player_win": "PLAYER WIN",
-        "short_banker": "B",
-        "short_player": "P",
-        "tie_win": "TIE"
+    "SicBo": {
+        "double": "Double",
+        "option_big": "Big",
+        "option_small": "Small",
+        "single": "Single",
+        "specific_number": "Specific number",
+        "triple": "Triple"
     }
 };
 

@@ -199,21 +199,13 @@ export const languages = {
         "win_loss": "赢 输",
         "you_reach_max_win": "您达到了最大胜利"
     },
-    "Baccarat": {
-        "banker_win": "庄家赢！",
-        "game_icon_name": "百家乐",
-        "game_name": "百家乐",
-        "glossary_banker": "庄家",
-        "glossary_banker_pair": "庄家一对",
-        "glossary_big": "大",
-        "glossary_player": "闲家",
-        "glossary_player_pair": "闲家一对",
-        "glossary_small": "小",
-        "glossary_tie": "和",
-        "player_win": "闲家获胜",
-        "short_banker": "庄",
-        "short_player": "闲",
-        "tie_win": "和"
+    "SicBo": {
+        "double": "双倍",
+        "option_big": "大",
+        "option_small": "小",
+        "single": "单",
+        "specific_number": "特定号码",
+        "triple": "三倍"
     }
 };
 
