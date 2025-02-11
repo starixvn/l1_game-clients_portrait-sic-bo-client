@@ -5,15 +5,14 @@ import { sharedContainer } from "../../scripts/shared-container";
 
 export const settings = {
     id: 10,
-    name: "Baccarat",
-    namespaces: ["Baccarat"],
+    name: "SicBo",
+    namespaces: ["SicBo"],
     durations: {
-        wholeRound: 45,
-        lockingBet: 3,
-        placingBet: 30,
-        generatingResult: 7,
-        showingResult: 5,
-        startRound: 2,
+        wholeRound: 57,
+        lockingBet: 5,
+        placingBet: 45,
+        showingResult: 8,
+        startRound: 4,
     },
     numberOfRoundHistory: 102,
 };

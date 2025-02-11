@@ -2,7 +2,6 @@ import "./../../../resources/i18n";
 
 import gc from "@sg/game-client-base";
 import { _decorator, Node } from "cc";
-import { BaccaratCardsUI } from "db://baccarat-shared-components/cards/baccarat-cards";
 import { AudioContainer } from "db://shared-components/game/audios/scripts/component/audio-container";
 import { ChipFlying } from "db://shared-components/game/chip-flying/scripts/components/chip-flying";
 import GameComponent from "db://shared-components/game/scripts/components/game-component";
@@ -34,7 +33,7 @@ export default class Game extends GameComponent {
     @property(Node)
     nodeWinning: Node = null;
 
-    baccaratCardsUi: BaccaratCardsUI = null;
+    // baccaratCardsUi: BaccaratCardsUI = null;
 
     protected enableFixHandleFinish = true;
     private audioContainer: AudioContainer = null;
@@ -61,9 +60,9 @@ export default class Game extends GameComponent {
             const winning = this.getWinningResult();
             winning.hideQuickly();
             if (hasAnimation) {
-                await this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
+                // await this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
             } else {
-                this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
+                // this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
             }
             const winChoice = this.soundWinChoice.find((choice) => settlementResult[choice]);
             this.playSound(`${winChoice}-${gc.Translator.getLanguageId()}`);
@@ -106,7 +105,7 @@ export default class Game extends GameComponent {
             50,
             1000
         );
-        this.baccaratCardsUi.initCards();
+        // this.baccaratCardsUi.initCards();
         const lastRound = firstJoinGameHistory.roundHistory as any;
         if (lastRound) {
             const { result, settlementResult } = lastRound;
@@ -115,11 +114,11 @@ export default class Game extends GameComponent {
                 this.showResult(result, false, settlementResult);
                 return;
             }
-            await this.baccaratCardsUi.draw6Cards(false);
+            // await this.baccaratCardsUi.draw6Cards(false);
         } else {
-            if (firstJoinGameHistory.roundTime <= settings.durations.placingBet + settings.durations.startRound) {
-                await this.baccaratCardsUi.draw6Cards(false);
-            }
+            // if (firstJoinGameHistory.roundTime <= settings.durations.placingBet + settings.durations.startRound) {
+            //     await this.baccaratCardsUi.draw6Cards(false);
+            // }
         }
     }
 
