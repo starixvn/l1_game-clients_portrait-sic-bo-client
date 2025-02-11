@@ -64,8 +64,7 @@ export default class Game extends GameComponent {
             } else {
                 // this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
             }
-            const winChoice = this.soundWinChoice.find((choice) => settlementResult[choice]);
-            this.playSound(`${winChoice}-${gc.Translator.getLanguageId()}`);
+
             winning?.setSettlementResult(settlementResult);
             winning?.show();
             this.isAnimatingResult = false;
