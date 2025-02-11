@@ -201,6 +201,9 @@ export const languages = {
     },
     "SicBo": {
         "double": "Dobel",
+        "game_icon_name": "Sic Bo",
+        "game_name": "Sic Bo",
+        "option_any_triple": "Tripel apa saja",
         "option_big": "Besar",
         "option_small": "Kecil",
         "single": "Single",

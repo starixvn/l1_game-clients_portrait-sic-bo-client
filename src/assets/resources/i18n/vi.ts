@@ -201,6 +201,9 @@ export const languages = {
     },
     "SicBo": {
         "double": "Đôi",
+        "game_icon_name": "Tài Xỉu Sic Bo",
+        "game_name": "Tài Xỉu Sic Bo",
+        "option_any_triple": "Bộ Ba Bất Kỳ",
         "option_big": "Tài",
         "option_small": "Xỉu",
         "single": "Đơn",
