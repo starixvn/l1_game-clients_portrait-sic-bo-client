@@ -116,11 +116,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>spriteSourceSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>textureRect</key>
-                <string>{{219,152},{23,23}}</string>
+                <string>{{219,152},{28,28}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -131,11 +131,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>spriteSourceSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>textureRect</key>
-                <string>{{219,177},{23,23}}</string>
+                <string>{{219,182},{28,28}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -146,11 +146,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>spriteSourceSize</key>
-                <string>{23,23}</string>
+                <string>{28,28}</string>
                 <key>textureRect</key>
-                <string>{{219,202},{23,23}}</string>
+                <string>{{219,212},{28,28}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -243,7 +243,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ee9a57c9152bb4d84d957c862053ef33:ed1bc904978fd32a79f2b0a7ecdb2c7e:cdf8a46398148b6645ff352c57c9e7c3$</string>
+            <string>$TexturePacker:SmartUpdate:ba9f85d03ddf0cd6fb1a11a3590b43e7:d2e865818a45163e6d2e6c73050fbb63:cdf8a46398148b6645ff352c57c9e7c3$</string>
             <key>textureFileName</key>
             <string>portrait-sicbo.webp</string>
         </dict>
