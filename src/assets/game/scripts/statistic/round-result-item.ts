@@ -1,6 +1,12 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Component, Label, Node, Sprite, SpriteAtlas } from "cc";
+import { _decorator, Color, Component, Label, Node, Sprite, SpriteAtlas } from "cc";
 const { ccclass, property } = _decorator;
+
+const enum Choice {
+    anyTriple = "anyTriple",
+    big = "big",
+    small = "small",
+}
 
 @ccclass("round_result_item")
 export class RoundResultItem extends Component {
@@ -13,16 +19,21 @@ export class RoundResultItem extends Component {
     @property(Label)
     lblTotalPoint: Label = null;
 
+    @property(Node)
+    highlight: Node = null;
+
     @property(SpriteAtlas)
     mainAtlas: SpriteAtlas = null;
 
     private mainChoice = ["anyTriple", "big", "small"];
+    private choiceColors = ["ffc514", "ff4848", "3a8eff"];
 
     setData(data: any) {
         const { result, settlementResult } = data;
-        this.mainChoice.forEach((choice) => {
+        this.mainChoice.forEach((choice, index) => {
             if (settlementResult[choice]) {
-                this.lblResult.string = gc.Translator.gameTranslate(`option_${choice}`);
+                this.lblResult.string = gc.Translator.gameTranslate(`scoreboard_${choice}`);
+                this.lblResult.color = new Color().fromHEX(this.choiceColors[index]);
             }
         });
 

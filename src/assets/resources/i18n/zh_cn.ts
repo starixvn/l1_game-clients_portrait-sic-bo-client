@@ -206,7 +206,7 @@ export const languages = {
         "glossary_big": "大",
         "glossary_small": "小",
         "option_anyTriple": "任何三重",
-        "scoreboard_anyTripple": "三",
+        "scoreboard_anyTriple": "三",
         "scoreboard_big": "大",
         "scoreboard_small": "小",
         "single": "单",

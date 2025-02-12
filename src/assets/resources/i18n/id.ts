@@ -206,7 +206,7 @@ export const languages = {
         "glossary_big": "Besar",
         "glossary_small": "Kecil",
         "option_anyTriple": "Tripel apa saja",
-        "scoreboard_anyTripple": "T",
+        "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "K",
         "single": "Single",

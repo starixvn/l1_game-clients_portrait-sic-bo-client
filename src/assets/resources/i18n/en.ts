@@ -206,7 +206,7 @@ export const languages = {
         "glossary_big": "Big",
         "glossary_small": "Small",
         "option_anyTriple": "Any Triple",
-        "scoreboard_anyTripple": "T",
+        "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "S",
         "single": "Single",

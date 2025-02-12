@@ -206,7 +206,7 @@ export const languages = {
         "glossary_big": "ใหญ่",
         "glossary_small": "เล็ก",
         "option_anyTriple": "ตองใดๆ",
-        "scoreboard_anyTripple": "T",
+        "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "S",
         "single": "เดี่ยว",
