@@ -2,12 +2,12 @@
   "ver": "1.1.50",
   "importer": "prefab",
   "imported": true,
-  "uuid": "a99923ff-fd2b-4e66-bfca-7d4c5ca4286e",
+  "uuid": "6fee1916-15fe-40ac-a5fa-1778471ef031",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "sicbo-round-result"
+    "syncNodeName": "sicbo-result-body"
   }
 }
