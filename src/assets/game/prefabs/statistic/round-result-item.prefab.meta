@@ -2,12 +2,12 @@
   "ver": "1.1.50",
   "importer": "prefab",
   "imported": true,
-  "uuid": "a974c872-792a-49aa-a083-375e287c5394",
+  "uuid": "684cdab0-3281-410c-a99d-d26bac6fc9ca",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "baccarat-cockroach-road-item-zoomin"
+    "syncNodeName": "round-result-item"
   }
 }
