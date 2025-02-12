@@ -11,8 +11,8 @@ export const settings = {
         wholeRound: 57,
         lockingBet: 5,
         placingBet: 45,
-        showingResult: 8,
-        startRound: 4,
+        showingResult: 12,
+        startRound: 0,
     },
     numberOfRoundHistory: 102,
 };

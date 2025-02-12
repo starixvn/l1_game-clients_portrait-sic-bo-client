@@ -5,13 +5,12 @@ import { _decorator, Node } from "cc";
 import { AudioContainer } from "db://shared-components/game/audios/scripts/component/audio-container";
 import { ChipFlying } from "db://shared-components/game/chip-flying/scripts/components/chip-flying";
 import GameComponent from "db://shared-components/game/scripts/components/game-component";
-import { WinningResult } from "db://shared-components/shared/common-components/winning-result/scripts/winning-result";
 import { startGame } from "db://shared-components/shared/scripts/startup";
-import { FunctionUtils } from "db://shared-components/shared/utils";
 import Observer from "observer";
 
 import { siteConfigs } from "../../../scripts/site-configs";
 import { containerOptions, settings } from "../game-settings";
+import { GameResult } from "./game-result";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.namespaces.concat(["Baccarat", "ui"]));
 const { Rounds, RoundHistories } = gc;
@@ -30,21 +29,32 @@ export default class Game extends GameComponent {
     @property(Node)
     nodeAudioContainer: Node = null;
 
-    @property(Node)
-    nodeWinning: Node = null;
-
-    // baccaratCardsUi: BaccaratCardsUI = null;
+    @property(GameResult)
+    resultComp: GameResult = null;
 
     protected enableFixHandleFinish = true;
     private audioContainer: AudioContainer = null;
-    private winningResult: WinningResult = null;
-    private soundWinChoice = ["banker", "player", "tie"];
     private isAnimatingResult = false;
+    private prevResult: any;
+    private currentRoundId: number;
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
-        this.winningResult = this.nodeWinning.getComponent(WinningResult);
+
         super.onLoad();
+    }
+
+    @render(Rounds.RoundStore, (store) => store.clientRoundId)
+    renderRoundId(roundId: number) {
+        roundId > 0 && (this.currentRoundId = roundId);
+    }
+
+    @render(RoundHistories.RoundHistoryStore, (store) => store.histories)
+    async updatePrevResult(histories: gc.RoundHistories.RoundHistory) {
+        if (!histories) {
+            return;
+        }
+        this.prevResult = histories[0]?.result;
     }
 
     async showResult(
@@ -57,22 +67,16 @@ export default class Game extends GameComponent {
                 return;
             }
             this.isAnimatingResult = true;
-            const winning = this.getWinningResult();
-            winning.hideQuickly();
+
             if (hasAnimation) {
-                // await this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
+                this.playSound("dice_shake");
+                this.resultComp.showResultAnim(this.prevResult, result, this.currentRoundId);
             } else {
-                // this.baccaratCardsUi.openCards(result as any, settlementResult, hasAnimation);
+                this.resultComp?.showResultNoAnim(result, this.currentRoundId);
             }
 
-            winning?.setSettlementResult(settlementResult);
-            winning?.show();
             this.isAnimatingResult = false;
         }
-    }
-
-    getWinningResult() {
-        return this.winningResult.getComponent(WinningResult);
     }
 
     async renderCurrentFinish(currentFinish: gc.GameServiceMessage.Finish) {
@@ -97,27 +101,11 @@ export default class Game extends GameComponent {
         if (!firstJoinGameHistory) {
             return;
         }
-        await FunctionUtils.waitUntil(
-            () => {
-                return true;
-            },
-            50,
-            1000
-        );
-        // this.baccaratCardsUi.initCards();
+
         const lastRound = firstJoinGameHistory.roundHistory as any;
         if (lastRound) {
             const { result, settlementResult } = lastRound;
-            const animated = firstJoinGameHistory.animationHighlight;
-            if (animated) {
-                this.showResult(result, false, settlementResult);
-                return;
-            }
-            // await this.baccaratCardsUi.draw6Cards(false);
-        } else {
-            // if (firstJoinGameHistory.roundTime <= settings.durations.placingBet + settings.durations.startRound) {
-            //     await this.baccaratCardsUi.draw6Cards(false);
-            // }
+            this.showResult(result, false, settlementResult);
         }
     }
 
@@ -132,6 +120,6 @@ export default class Game extends GameComponent {
 
     @render(Rounds.RoundTimeStore, (store) => store.isStartingRound)
     disableWinNotice(isStartingRound: boolean) {
-        isStartingRound && this.winningResult.hideQuickly();
+        // isStartingRound && this.winningResult.hideQuickly();
     }
 }
