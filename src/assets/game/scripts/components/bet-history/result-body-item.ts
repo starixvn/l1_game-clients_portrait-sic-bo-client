@@ -1,6 +1,5 @@
 import { _decorator, Color, Label, Sprite, SpriteFrame } from "cc";
 import { BaseResultBodyItem } from "db://shared-components/game/bet-history/scripts/components/bet-history-body-item";
-import { PokerCard, ServiceCard } from "db://shared-components/game/poker-cards/scripts/poker-card";
 import gc from "@sg/game-client-base";
 
 const { ccclass, property } = _decorator;
