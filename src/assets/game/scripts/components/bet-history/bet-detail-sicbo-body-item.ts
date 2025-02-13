@@ -5,12 +5,17 @@ import { GameRoundBetDetailsLog } from "db://shared-components/game/bet-history/
 import { CHOICE_TO_NUMBER, ODD_CHOICE } from "./bet-detail-sicbo-constant";
 
 const { ccclass, property } = _decorator;
-const { FormatUtils } = gc;
+const { FormatUtils, Translator } = gc;
 
 @ccclass
 export class BetDetailLogSicboItem extends BetDetailDirectBodyItem {
     oddAfterCalculateOddsSpecificChoice = 0;
     isWinningBet = false;
+
+    setData(data) {
+        super.setData(data);
+        this.setChoiceLabel(data.betDetailsLog.choice);
+    }
 
     parseOddByData(data) {
         const { betDetailsLog, odds, result, fractionalOddsFormat } = data;
@@ -20,6 +25,14 @@ export class BetDetailLogSicboItem extends BetDetailDirectBodyItem {
             choiceNumber !== undefined
                 ? this.calculateOddsSpecificChoice(choiceNumber, odds, result).toString()
                 : this.formatOdds(odds[betDetailsLog.choice], fractionalOddsFormat);
+    }
+
+    private setChoiceLabel(choice: string) {
+        const choiceNumber = CHOICE_TO_NUMBER[choice];
+        this.lblChoice.string =
+            choiceNumber !== undefined
+                ? `${Translator.gameTranslate("glossary_specific")} - ${choiceNumber}`
+                : Translator.gameTranslate(`glossary_${choice}`);
     }
 
     calculateOddsSpecificChoice(choiceNumber: number, odds: any, result: any) {

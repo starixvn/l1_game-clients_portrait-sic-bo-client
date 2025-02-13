@@ -206,11 +206,11 @@ export const languages = {
         "glossary_anyTriple": "Tripel apa saja",
         "glossary_big": "Besar",
         "glossary_small": "Kecil",
+        "glossary_specific": "Nomor Spesifik",
         "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "K",
         "single": "Single",
-        "specific_number": "Nomor Spesifik",
         "triple": "Tripel"
     }
 };

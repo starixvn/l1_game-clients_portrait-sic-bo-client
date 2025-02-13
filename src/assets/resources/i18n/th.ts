@@ -206,11 +206,11 @@ export const languages = {
         "glossary_anyTriple": "ตองใดๆ",
         "glossary_big": "ใหญ่",
         "glossary_small": "เล็ก",
+        "glossary_specific": "หมายเลขเฉพาะ",
         "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "S",
         "single": "เดี่ยว",
-        "specific_number": "หมายเลขเฉพาะ",
         "triple": "สามเท่า"
     }
 };

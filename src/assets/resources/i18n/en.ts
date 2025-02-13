@@ -206,11 +206,11 @@ export const languages = {
         "glossary_anyTriple": "Any Triple",
         "glossary_big": "Big",
         "glossary_small": "Small",
+        "glossary_specific": "Specific number",
         "scoreboard_anyTriple": "T",
         "scoreboard_big": "B",
         "scoreboard_small": "S",
         "single": "Single",
-        "specific_number": "Specific number",
         "triple": "Triple"
     }
 };

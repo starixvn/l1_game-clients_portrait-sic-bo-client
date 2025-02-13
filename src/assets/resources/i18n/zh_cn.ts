@@ -206,11 +206,11 @@ export const languages = {
         "glossary_anyTriple": "任何三重",
         "glossary_big": "大",
         "glossary_small": "小",
+        "glossary_specific": "特定号码",
         "scoreboard_anyTriple": "三",
         "scoreboard_big": "大",
         "scoreboard_small": "小",
         "single": "单",
-        "specific_number": "特定号码",
         "triple": "三倍"
     }
 };

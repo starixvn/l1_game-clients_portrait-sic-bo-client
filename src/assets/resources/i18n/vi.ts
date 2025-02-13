@@ -206,11 +206,11 @@ export const languages = {
         "glossary_anyTriple": "Bộ Ba Bất Kỳ",
         "glossary_big": "Tài",
         "glossary_small": "Xỉu",
+        "glossary_specific": "Cược số",
         "scoreboard_anyTriple": "B",
         "scoreboard_big": "T",
         "scoreboard_small": "X",
         "single": "Đơn",
-        "specific_number": "Cược số",
         "triple": "Bộ Ba"
     }
 };
