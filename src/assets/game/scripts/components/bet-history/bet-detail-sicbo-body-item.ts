@@ -21,10 +21,14 @@ export class BetDetailLogSicboItem extends BetDetailDirectBodyItem {
         const { betDetailsLog, odds, result, fractionalOddsFormat } = data;
         const choiceNumber = CHOICE_TO_NUMBER[betDetailsLog.choice];
 
-        this.lblOdds.string =
-            choiceNumber !== undefined
-                ? this.calculateOddsSpecificChoice(choiceNumber, odds, result).toString()
-                : this.formatOdds(odds[betDetailsLog.choice], fractionalOddsFormat);
+        let oddsValue = 0;
+        if (choiceNumber === undefined) {
+            oddsValue = odds[betDetailsLog.choice];
+        } else {
+            oddsValue = this.calculateOddsSpecificChoice(choiceNumber, odds, result);
+        }
+
+        this.lblOdds.string = this.formatOdds(oddsValue, fractionalOddsFormat);
     }
 
     private setChoiceLabel(choice: string) {
