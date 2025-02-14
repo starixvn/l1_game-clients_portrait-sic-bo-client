@@ -206,7 +206,7 @@ export const languages = {
         "glossary_anyTriple": "Bộ Ba Bất Kỳ",
         "glossary_big": "Tài",
         "glossary_small": "Xỉu",
-        "glossary_specific": "Cược số",
+        "glossary_specific": "Cược Số",
         "scoreboard_anyTriple": "B",
         "scoreboard_big": "T",
         "scoreboard_small": "X",
