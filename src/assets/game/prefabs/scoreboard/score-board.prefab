@@ -6115,7 +6115,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1,
+      "width": 2,
       "height": 195
     },
     "_anchorPoint": {
@@ -6149,7 +6149,7 @@
       "r": 119,
       "g": 119,
       "b": 119,
-      "a": 255
+      "a": 100
     },
     "_spriteFrame": {
       "__uuid__": "de2e21ff-8da4-4a9a-b21d-291e256c2120@ff1d0",
@@ -6188,7 +6188,7 @@
     },
     "_alignFlags": 13,
     "_target": null,
-    "_left": 0,
+    "_left": -1,
     "_right": 0,
     "_top": 0,
     "_bottom": 0,

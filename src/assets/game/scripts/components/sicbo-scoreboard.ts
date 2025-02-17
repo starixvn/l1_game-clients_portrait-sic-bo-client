@@ -48,8 +48,13 @@ export class SicboScoreBoard extends ObserverComponent {
             this.nodeBigRoad.getComponent(UITransform).width = this.WIDTH_COLLAPSE_BIGROAD;
             this.sprChangeModeBigRoad.spriteFrame = this.mainAtlas.getSpriteFrame("stats-icon-expand");
         }
+
+        this.scrollBigRoad.stopAutoScroll();
         this.scrollBigRoad.scrollToRight();
+
+        this.scrollDiceStatistic.stopAutoScroll();
         this.scrollDiceStatistic.scrollToRight();
+
         this.nodeContainer.getComponent(Layout).updateLayout();
     }
 }
