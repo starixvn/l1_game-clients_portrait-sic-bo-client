@@ -11,10 +11,10 @@ export const settings = {
         wholeRound: 57,
         lockingBet: 5,
         placingBet: 45,
-        showingResult: 12,
-        startRound: 0,
+        showingResult: 11,
+        startRound: 1,
     },
-    numberOfRoundHistory: 102,
+    numberOfRoundHistory: 100,
 };
 
 export const containerOptions: gc.IContainerOptions = {
