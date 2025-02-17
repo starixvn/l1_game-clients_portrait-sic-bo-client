@@ -40,7 +40,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": -6.0820000000000505,
       "z": 0
     },
     "_lrot": {
@@ -133,7 +133,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 632,
+      "width": 590,
       "height": 32
     },
     "_anchorPoint": {
@@ -307,7 +307,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 309.355,
+      "x": 287,
       "y": 0.5879999999999654,
       "z": 0
     },
@@ -415,7 +415,7 @@
     "_alignFlags": 32,
     "_target": null,
     "_left": 0,
-    "_right": 20.644999999999982,
+    "_right": 28,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -564,7 +564,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 311.38599999999997,
+      "x": 287,
       "y": 0.5879999999999654,
       "z": 0
     },
@@ -835,7 +835,7 @@
     "_alignFlags": 32,
     "_target": null,
     "_left": 0,
-    "_right": 18.614000000000033,
+    "_right": 28,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -883,7 +883,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 660,
+      "width": 630,
       "height": 44
     },
     "_anchorPoint": {
@@ -961,13 +961,15 @@
       "__expectedType__": "cc.Prefab"
     },
     "tooltipPrefab": {
-      "__uuid__": "1508e5e7-3aa5-4442-8e77-59008fa2808f",
+      "__uuid__": "1c02c612-61ad-4d92-80ac-867f6f58e3a5",
       "__expectedType__": "cc.Prefab"
     },
     "nodeNext": {
       "__id__": 24
     },
-    "maxItems": 20,
+    "maxItems": 23,
+    "needAlignment": false,
+    "offsetBorderCount": 2,
     "_id": ""
   },
   {

@@ -1,4 +1,4 @@
-import { _decorator, Layout, Node, Sprite, SpriteAtlas, UITransform } from "cc";
+import { _decorator, Layout, Node, ScrollView, Sprite, SpriteAtlas, UITransform } from "cc";
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
 import Observer from "observer";
 const { handle, render } = Observer;
@@ -18,6 +18,12 @@ export class SicboScoreBoard extends ObserverComponent {
 
     @property(SpriteAtlas)
     mainAtlas: SpriteAtlas = null;
+
+    @property(ScrollView)
+    scrollBigRoad: ScrollView = null;
+
+    @property(ScrollView)
+    scrollDiceStatistic: ScrollView = null;
 
     @property(Sprite)
     sprChangeModeBigRoad: Sprite = null;
@@ -42,6 +48,8 @@ export class SicboScoreBoard extends ObserverComponent {
             this.nodeBigRoad.getComponent(UITransform).width = this.WIDTH_COLLAPSE_BIGROAD;
             this.sprChangeModeBigRoad.spriteFrame = this.mainAtlas.getSpriteFrame("stats-icon-expand");
         }
+        this.scrollBigRoad.scrollToRight();
+        this.scrollDiceStatistic.scrollToRight();
         this.nodeContainer.getComponent(Layout).updateLayout();
     }
 }
