@@ -1,5 +1,5 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Label } from "cc";
+import { _decorator, Label, Layout } from "cc";
 import { LedLightTooltip } from "db://shared-components/game/led-light/scripts/components/led-light-tooltip";
 const { ccclass, property } = _decorator;
 
@@ -7,6 +7,9 @@ const { ccclass, property } = _decorator;
 export class SicboLedLightTooltip extends LedLightTooltip {
     @property({ type: Label })
     diceList: Label[] = [];
+
+    @property(Layout)
+    layoutResult: Layout = null;
 
     private mainChoice = ["anyTriple", "big", "small"];
 
@@ -23,5 +26,6 @@ export class SicboLedLightTooltip extends LedLightTooltip {
                 this.result.string = gc.Translator.gameTranslate(`glossary_${choice}`);
             }
         });
+        this.layoutResult.updateLayout();
     }
 }
