@@ -1,10 +1,15 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Component, Label, Node, sp, SpriteAtlas, SpriteFrame, tween, UIOpacity, v3 } from "cc";
+import { _decorator, Label, Node, sp, SpriteAtlas, SpriteFrame, tween, UIOpacity, v3 } from "cc";
+import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
 import { AnimationUtils } from "db://shared-components/shared/utils/utils";
+import Observer from "observer";
 
 import { ResultDice } from "./result-dice";
 
 const { ccclass, property } = _decorator;
+const { render } = Observer;
+
+const { Rounds, Translator } = gc;
 
 interface IResultDiceFrames {
     dice1: SpriteFrame[];
@@ -13,7 +18,7 @@ interface IResultDiceFrames {
 }
 
 @ccclass("GameResult")
-export class GameResult extends Component {
+export class GameResult extends ObserverComponent {
     @property(ResultDice)
     dicesComponent: ResultDice[] = [];
 
@@ -34,12 +39,13 @@ export class GameResult extends Component {
     private readonly DICE_POSITION_NUMBER = 7;
     private readonly LOOP_NUMBER = 2;
     private readonly DICE_END_FRAME = 11;
-    RESULT_DURATION = 1.4;
+    private readonly RESULT_DURATION = 1.4;
 
     onLoad() {
         this.setResultTextVisibility(false);
         this.resetResultDiceFrames();
         this.initDiceSpriteFrames();
+        super.onLoad();
     }
 
     private initDiceSpriteFrames() {
@@ -73,6 +79,13 @@ export class GameResult extends Component {
         });
     }
 
+    @render(Rounds.RoundTimeStore, (store) => store.isStartingRound)
+    hideResultText(isStartingRound: boolean) {
+        if (isStartingRound) {
+            this.setResultTextVisibility(false);
+        }
+    }
+
     setResultTextVisibility(isShow: boolean) {
         if (!this.nodeResult) {
             return;
@@ -99,12 +112,12 @@ export class GameResult extends Component {
     }
 
     calcTotalPoints(result: any): number {
-        return ["dice1", "dice2"].map((key) => result[key]).reduce((sum, value) => sum + value, 0);
+        return ["dice1", "dice2", "dice3"].map((key) => result[key]).reduce((sum, value) => sum + value, 0);
     }
 
     determineWinningChoice(totalPoints: number): string {
         const winChoice = totalPoints > 6 ? "SicBo.glossary_big" : "SicBo.glossary_small";
-        return `${totalPoints} - ${gc.Translator.translate(winChoice)}`;
+        return `${totalPoints} - ${Translator.translate(winChoice)}`;
     }
 
     setResultText(value: string) {

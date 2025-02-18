@@ -117,9 +117,4 @@ export default class Game extends GameComponent {
             this.audioContainer.updateVolumeMusicSource(1, 3);
         }
     }
-
-    @render(Rounds.RoundTimeStore, (store) => store.isStartingRound)
-    disableWinNotice(isStartingRound: boolean) {
-        // isStartingRound && this.winningResult.hideQuickly();
-    }
 }
