@@ -1,3 +1,4 @@
+import gc from "@sg/game-client-base";
 import { _decorator, Component, Label, Node, sp, SpriteAtlas, SpriteFrame, tween, UIOpacity, v3 } from "cc";
 import { AnimationUtils } from "db://shared-components/shared/utils/utils";
 
@@ -58,6 +59,7 @@ export class GameResult extends Component {
         const position = roundId % this.DICE_POSITION_NUMBER || this.DICE_POSITION_NUMBER;
         const nextPosition = (position % this.DICE_POSITION_NUMBER) + 1;
 
+        console.log("getDiceAnimationName", `s${position}-e${nextPosition}`);
         return `s${position}-e${nextPosition}`;
     }
 
@@ -77,23 +79,32 @@ export class GameResult extends Component {
         }
 
         this.nodeResult.active = isShow;
+        const opacityComp = this.nodeResult.getComponent(UIOpacity);
 
         if (!isShow) {
-            this.nodeResult.getComponent(UIOpacity).opacity = 0;
+            opacityComp.opacity = 0;
             return;
         }
 
-        const opacity = this.nodeResult.getComponent(UIOpacity);
         tween(this.nodeResult)
-            .to(0.2, { scale: v3(1.2) }, { easing: "bounceOut" })
-            .parallel(tween().to(0.3, { scale: v3(1) }), tween(opacity).to(0.3, { opacity: 255 }))
+            .to(0.2, { scale: v3(1.2, 1.2, 1.2) }, { easing: "bounceOut" })
+            .parallel(tween().to(0.3, { scale: v3(1, 1, 1) }), tween(opacityComp).to(0.3, { opacity: 255 }))
             .start();
     }
 
     showResultText(result: any) {
-        // const choiceWin = determineWinningChoice(calcTotalPoints(result));
-        // this.setResultText(choiceWin.toUpperCase());
-        // this.setResultTextVisibility(true);
+        const choiceWin = this.determineWinningChoice(this.calcTotalPoints(result));
+        this.setResultText(choiceWin.toUpperCase());
+        this.setResultTextVisibility(true);
+    }
+
+    calcTotalPoints(result: any): number {
+        return ["dice1", "dice2"].map((key) => result[key]).reduce((sum, value) => sum + value, 0);
+    }
+
+    determineWinningChoice(totalPoints: number): string {
+        const winChoice = totalPoints > 6 ? "SicBo.glossary_big" : "SicBo.glossary_small";
+        return `${totalPoints} - ${gc.Translator.translate(winChoice)}`;
     }
 
     setResultText(value: string) {
