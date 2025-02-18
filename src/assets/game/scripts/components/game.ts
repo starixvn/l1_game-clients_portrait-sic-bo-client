@@ -45,7 +45,7 @@ export default class Game extends GameComponent {
     }
 
     @render(Rounds.RoundStore, (store) => store.clientRoundId)
-    renderRoundId(roundId: number) {
+    updateCurrentRoundId(roundId: number) {
         roundId > 0 && (this.currentRoundId = roundId);
     }
 

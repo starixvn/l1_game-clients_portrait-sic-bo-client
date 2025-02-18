@@ -751,7 +751,7 @@
     "_originalHeight": 0,
     "_alignMode": 1,
     "_lockFlags": 0,
-    "_id": "fdttOuGdZBKY/EuUgdh/CA"
+    "_id": "1eUOt7M2NOeLPo4qJJEKL5"
   },
   {
     "__type__": "cc.Node",
@@ -4417,7 +4417,7 @@
     "_id": "75j7BLLQtDk55AF57/dj/k"
   },
   {
-    "__type__": "65d00swHDJGmpe908NqbMfM",
+    "__type__": "80b22hzKrBNc7CiPn0+Az0W",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -4426,12 +4426,8 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "gameNode": {
-      "__id__": 43
-    },
-    "value": 0.1,
-    "_policy": 0,
-    "_id": "0ethApcoJOsoaJHQR8mn4M"
+    "value": -0.1,
+    "_id": "dem4ZH/bNB+a4sU75jpklO"
   },
   {
     "__type__": "cc.Node",
