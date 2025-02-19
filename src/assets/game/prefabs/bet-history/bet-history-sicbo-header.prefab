@@ -1048,12 +1048,12 @@
       "a": 255
     },
     "_string": "Total Stake",
-    "_horizontalAlign": 0,
+    "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 23,
     "_fontSize": 23,
     "_fontFamily": "Arial",
-    "_lineHeight": 46,
+    "_lineHeight": 23,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
@@ -1130,7 +1130,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 129.45361328125,
-      "height": 57.96
+      "height": 28.98
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1155,7 +1155,7 @@
     "__prefab": {
       "__id__": 59
     },
-    "key": "Common.total_stake",
+    "key": "Common.total_stake_shorten",
     "format": 3,
     "prefix": "",
     "suffix": "",
