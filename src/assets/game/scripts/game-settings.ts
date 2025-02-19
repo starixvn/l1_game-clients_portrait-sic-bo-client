@@ -8,9 +8,9 @@ export const settings = {
     name: "SicBo",
     namespaces: ["SicBo"],
     durations: {
-        wholeRound: 57,
-        lockingBet: 5,
-        placingBet: 45,
+        wholeRound: 42,
+        lockingBet: 3,
+        placingBet: 30,
         generatingResult: 4,
         showingResult: 7,
         startRound: 1,
