@@ -902,7 +902,7 @@
     "_originalHeight": 0,
     "_alignMode": 1,
     "_lockFlags": 0,
-    "_id": "2aoR3ITJ1EnbpqOHmGuiHR"
+    "_id": "65q5PgKMxHNZ0fUtVgHqzr"
   },
   {
     "__type__": "cc.Node",
@@ -1170,7 +1170,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -348.263,
-      "y": 335.278,
+      "y": 235.0999999999999,
       "z": 0
     },
     "_lrot": {
@@ -1309,7 +1309,7 @@
     "_target": null,
     "_left": 0,
     "_right": 0,
-    "_top": 177.72199999999998,
+    "_top": 277.9000000000001,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
