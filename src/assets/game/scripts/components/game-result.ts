@@ -40,6 +40,8 @@ export class GameResult extends ObserverComponent {
     private readonly LOOP_NUMBER = 2;
     private readonly DICE_END_FRAME = 11;
     private readonly RESULT_DURATION = 1.9;
+    private readonly RESULT_TEXT_DELAY = 0.5;
+    private readonly BIG_SMALL_THRESHOLD = 10;
 
     onLoad() {
         this.setResultTextVisibility(false);
@@ -116,7 +118,7 @@ export class GameResult extends ObserverComponent {
     }
 
     determineWinningChoice(totalPoints: number): string {
-        const winChoice = totalPoints > 6 ? "SicBo.glossary_big" : "SicBo.glossary_small";
+        const winChoice = totalPoints > this.BIG_SMALL_THRESHOLD ? "SicBo.glossary_big" : "SicBo.glossary_small";
         return `${totalPoints} - ${Translator.translate(winChoice)}`;
     }
 
@@ -136,7 +138,9 @@ export class GameResult extends ObserverComponent {
         this.dicesComponent.forEach((dice, index) => {
             dice.runAnimation(this.resultDiceFrames[`dice${index + 1}`], this.RESULT_DURATION);
         });
-        await AnimationUtils.delayTime(this.RESULT_DURATION);
+
+        const resultTextDelay = this.RESULT_DURATION + this.RESULT_TEXT_DELAY;
+        await AnimationUtils.delayTime(resultTextDelay);
         this.showResultText(result);
     }
 
