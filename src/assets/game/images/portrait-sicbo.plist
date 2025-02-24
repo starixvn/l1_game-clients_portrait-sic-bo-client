@@ -371,11 +371,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{32,195}</string>
+                <string>{32,194}</string>
                 <key>spriteSourceSize</key>
-                <string>{32,195}</string>
+                <string>{32,194}</string>
                 <key>textureRect</key>
-                <string>{{823,352},{32,195}}</string>
+                <string>{{823,352},{32,194}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -513,7 +513,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e2198568c3e3e783c4dfe9ddf4406c74:6d4b93dffd8e76297ee94bc9ce7c30d6:cdf8a46398148b6645ff352c57c9e7c3$</string>
+            <string>$TexturePacker:SmartUpdate:5348f75193a1b855a35f26db1a3c4a91:c96da16ddff01174118dcef219d68dca:cdf8a46398148b6645ff352c57c9e7c3$</string>
             <key>textureFileName</key>
             <string>portrait-sicbo.webp</string>
         </dict>

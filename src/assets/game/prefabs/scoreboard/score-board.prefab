@@ -6389,7 +6389,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 32,
-      "height": 195
+      "height": 194
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -9314,9 +9314,7 @@
   },
   {
     "__type__": "cc.TargetOverrideInfo",
-    "source": {
-      "__id__": 227
-    },
+    "source": null,
     "sourceInfo": null,
     "propertyPath": [],
     "target": {
@@ -9334,9 +9332,7 @@
   },
   {
     "__type__": "cc.TargetOverrideInfo",
-    "source": {
-      "__id__": 378
-    },
+    "source": null,
     "sourceInfo": null,
     "propertyPath": [
       "scrollDiceStatistic"
