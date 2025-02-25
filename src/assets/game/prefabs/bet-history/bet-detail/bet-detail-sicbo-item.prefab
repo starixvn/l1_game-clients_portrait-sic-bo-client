@@ -58,7 +58,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 537.9570000000001,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -250,7 +250,7 @@
     "__prefab": {
       "__id__": 10
     },
-    "_alignFlags": 40,
+    "_alignFlags": 45,
     "_target": null,
     "_left": 0,
     "_right": 0,
@@ -265,7 +265,7 @@
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
     "_originalWidth": 704,
-    "_originalHeight": 0,
+    "_originalHeight": 80,
     "_alignMode": 2,
     "_lockFlags": 0,
     "_id": ""
@@ -317,7 +317,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -185.396,
+      "x": -195.54195652173905,
       "y": 0,
       "z": 0
     },
@@ -724,7 +724,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 106.94599999999991,
+      "width": 106.94599999999994,
       "height": 80
     },
     "_anchorPoint": {
@@ -752,8 +752,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.18403571428571433,
-    "_right": 0.6745013227513228,
+    "_left": 0.17061513687600655,
+    "_right": 0.6879219001610306,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -825,7 +825,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -74.49200000000002,
+      "x": -77.87439130434781,
       "y": 0,
       "z": 0
     },
@@ -959,7 +959,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 99.91308593749994,
+      "width": 99.9130859375,
       "height": 55.44
     },
     "_anchorPoint": {
@@ -1044,8 +1044,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.3353855251736111,
-    "_right": 0.5324543082423943,
+    "_left": 0.3309114626017225,
+    "_right": 0.5369283708142828,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -1114,7 +1114,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 35.46100000000001,
+      "x": 35.46100000000004,
       "y": -2,
       "z": 0
     },
@@ -1248,7 +1248,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 37.57999999999987,
+      "width": 37.58,
       "height": 44
     },
     "_anchorPoint": {
@@ -1313,8 +1313,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.5220515873015874,
-    "_right": 0.428239417989418,
+    "_left": 0.5220515873015873,
+    "_right": 0.42823941798941795,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -1383,7 +1383,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 110.32,
+      "x": 113.7022173913043,
       "y": -1,
       "z": 0
     },
@@ -1517,7 +1517,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 21.540000000000077,
+      "width": 21.54,
       "height": 44
     },
     "_anchorPoint": {
@@ -1582,8 +1582,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.6316798941798941,
-    "_right": 0.3398280423280423,
+    "_left": 0.6361537267080745,
+    "_right": 0.3353542097998621,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -1646,8 +1646,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 199.19000000000005,
-      "y": 0,
+      "x": 207.08099999999996,
+      "y": 1,
       "z": 0
     },
     "_lrot": {
@@ -1659,8 +1659,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0.5,
-      "y": 0.5,
+      "x": 1,
+      "y": 1,
       "z": 0.5
     },
     "_mobility": 0,
@@ -1698,10 +1698,10 @@
     "_string": "165",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 36,
-    "_fontSize": 36,
+    "_actualFontSize": 21,
+    "_fontSize": 21,
     "_fontFamily": "Arial",
-    "_lineHeight": 44,
+    "_lineHeight": 22,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
@@ -1777,8 +1777,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 59.629999999999825,
-      "height": 44
+      "width": 34.78,
+      "height": 22
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1805,8 +1805,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.7437599206349208,
-    "_right": 0.21680224867724862,
+    "_left": 0.8210330687830686,
+    "_right": 0.27319973544973547,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
