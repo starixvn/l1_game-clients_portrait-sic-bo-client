@@ -3080,7 +3080,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -32.759765625,
+      "x": -39.46875,
       "y": 0,
       "z": 0
     },
@@ -3149,7 +3149,7 @@
     },
     "_alignFlags": 8,
     "_target": null,
-    "_left": 6.708984375,
+    "_left": 0,
     "_right": 0,
     "_top": 0,
     "_bottom": 0,
@@ -7715,7 +7715,7 @@
     "rowMax": 6,
     "itemSize": {
       "__type__": "cc.Size",
-      "width": 34,
+      "width": 32,
       "height": 32
     },
     "padding": {
