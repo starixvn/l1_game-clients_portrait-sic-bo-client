@@ -30,7 +30,7 @@ export class SicboScoreBoard extends ObserverComponent {
 
     private isExpandBigRoad = false;
 
-    private readonly WIDTH_COLLAPSE_BIGROAD = 98;
+    private readonly WIDTH_COLLAPSE_BIGROAD = 103;
     private readonly WIDTH_SPACING = 32;
     private readonly WIDTH_GAME = 828;
 
