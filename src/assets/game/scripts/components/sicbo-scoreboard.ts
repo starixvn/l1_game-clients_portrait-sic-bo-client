@@ -57,4 +57,11 @@ export class SicboScoreBoard extends ObserverComponent {
 
         this.nodeContainer.getComponent(Layout).updateLayout();
     }
+    onClickBigRoadWrapper () {
+        if(this.isExpandBigRoad == false){
+            return
+        }else{
+            this.onClickExpandMode();
+        }
+    }
 }
