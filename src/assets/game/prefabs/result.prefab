@@ -1778,7 +1778,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 99.754,
+      "y": 105.088,
       "z": 0
     },
     "_lrot": {
@@ -1910,8 +1910,8 @@
     "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 38,
-    "_fontSize": 38,
+    "_actualFontSize": 36,
+    "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
     "_overflow": 0,
@@ -1985,8 +1985,6 @@
       "__id__": 0
     },
     "fileId": "28eXeS/s9Fq6gjvTEXLFig",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
