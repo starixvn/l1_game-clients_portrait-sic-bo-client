@@ -108,7 +108,7 @@ export class GameResult extends ObserverComponent {
     }
 
     showResultText(result: any) {
-        const choiceWin = this.determineWinningChoice(this.calcTotalPoints(result));
+        const choiceWin = this.determineWinningChoice(this.calcTotalPoints(result) , result);
         this.setResultText(choiceWin.toUpperCase());
         this.setResultTextVisibility(true);
     }
@@ -117,7 +117,12 @@ export class GameResult extends ObserverComponent {
         return ["dice1", "dice2", "dice3"].map((key) => result[key]).reduce((sum, value) => sum + value, 0);
     }
 
-    determineWinningChoice(totalPoints: number): string {
+    determineWinningChoice(totalPoints: number , result): string {
+        const values = ["dice1", "dice2", "dice3"].map((data) => result[data]);
+        const areAllEqual = values?.every(value => value === values[0]);
+        if (areAllEqual) {
+            return `${totalPoints} - ${Translator.translate("SicBo.glossary_anyTriple")}`;
+        }
         const winChoice = totalPoints > this.BIG_SMALL_THRESHOLD ? "SicBo.glossary_big" : "SicBo.glossary_small";
         return `${totalPoints} - ${Translator.translate(winChoice)}`;
     }
