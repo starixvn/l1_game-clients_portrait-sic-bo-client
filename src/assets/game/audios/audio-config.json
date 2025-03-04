@@ -64,32 +64,32 @@
         "path": "winning/big-cn",
         "isLazyLoad": true
     },
-    "anytriple-vi" : {
+    "anyTriple-vi" : {
         "bundle": "resources",
         "path": "winning/anytriple-vi",
         "isLazyLoad": true
     },
-    "anytriple-tw" : {
+    "anyTriple-tw" : {
         "bundle": "resources",
         "path": "winning/anytriple-tw",
         "isLazyLoad": true
     },
-    "anytriple-th" : {
+    "anyTriple-th" : {
         "bundle": "resources",
         "path": "winning/anytriple-th",
         "isLazyLoad": true
     },
-    "anytriple-id" : {
+    "anyTriple-id" : {
         "bundle": "resources",
         "path": "winning/anytriple-id",
         "isLazyLoad": true
     },
-    "anytriple-en" : {
+    "anyTriple-en" : {
         "bundle": "resources",
         "path": "winning/anytriple-en",
         "isLazyLoad": true
     },
-    "anytriple-cn" : {
+    "anyTriple-cn" : {
         "bundle": "resources",
         "path": "winning/anytriple-cn",
         "isLazyLoad": true

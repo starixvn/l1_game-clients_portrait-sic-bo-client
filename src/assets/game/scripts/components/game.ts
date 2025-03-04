@@ -37,7 +37,7 @@ export default class Game extends GameComponent {
     private isAnimatingResult = false;
     private prevResult: any;
     private currentRoundId: number;
-    private soundWinChoice = ["anytriple", "big", "small"];
+    private soundWinChoice = ["anyTriple", "big", "small"];
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
