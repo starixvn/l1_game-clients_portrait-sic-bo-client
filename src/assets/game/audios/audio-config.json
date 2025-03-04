@@ -3,5 +3,95 @@
         "bundle": "resources",
         "path": "dice_shake",
         "isLazyLoad": true
+    },
+    "small-vi" : {
+        "bundle": "resources",
+        "path": "winning/small-vi",
+        "isLazyLoad": true
+    },
+    "small-tw" : {
+        "bundle": "resources",
+        "path": "winning/small-tw",
+        "isLazyLoad": true
+    },
+    "small-th" : {
+        "bundle": "resources",
+        "path": "winning/small-th",
+        "isLazyLoad": true
+    },
+    "small-id" : {
+        "bundle": "resources",
+        "path": "winning/small-id",
+        "isLazyLoad": true
+    },
+    "small-en" : {
+        "bundle": "resources",
+        "path": "winning/small-en",
+        "isLazyLoad": true
+    },
+    "small-cn" : {
+        "bundle": "resources",
+        "path": "winning/small-cn",
+        "isLazyLoad": true
+    },
+    "big-vi" : {
+        "bundle": "resources",
+        "path": "winning/big-vi",
+        "isLazyLoad": true
+    },
+    "big-tw" : {
+        "bundle": "resources",
+        "path": "winning/big-tw",
+        "isLazyLoad": true
+    },
+    "big-th" : {
+        "bundle": "resources",
+        "path": "winning/big-th",
+        "isLazyLoad": true
+    },
+    "big-id" : {
+        "bundle": "resources",
+        "path": "winning/big-id",
+        "isLazyLoad": true
+    },
+    "big-en" : {
+        "bundle": "resources",
+        "path": "winning/big-en",
+        "isLazyLoad": true
+    },
+    "big-cn" : {
+        "bundle": "resources",
+        "path": "winning/big-cn",
+        "isLazyLoad": true
+    },
+    "anytriple-vi" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-vi",
+        "isLazyLoad": true
+    },
+    "anytriple-tw" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-tw",
+        "isLazyLoad": true
+    },
+    "anytriple-th" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-th",
+        "isLazyLoad": true
+    },
+    "anytriple-id" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-id",
+        "isLazyLoad": true
+    },
+    "anytriple-en" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-en",
+        "isLazyLoad": true
+    },
+    "anytriple-cn" : {
+        "bundle": "resources",
+        "path": "winning/anytriple-cn",
+        "isLazyLoad": true
     }
 }

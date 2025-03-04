@@ -37,6 +37,7 @@ export default class Game extends GameComponent {
     private isAnimatingResult = false;
     private prevResult: any;
     private currentRoundId: number;
+    private soundWinChoice = ["anytriple", "big", "small"];
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
@@ -74,6 +75,8 @@ export default class Game extends GameComponent {
             } else {
                 this.resultComp?.showResultNoAnim(result, this.currentRoundId);
             }
+            const winChoice = this.soundWinChoice.find((choice) => settlementResult[choice]);
+            this.playSound(`${winChoice}-${gc.Translator.getLanguageId()}`);
 
             this.isAnimatingResult = false;
         }
