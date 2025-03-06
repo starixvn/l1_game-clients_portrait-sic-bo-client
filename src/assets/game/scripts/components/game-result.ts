@@ -66,8 +66,6 @@ export class GameResult extends ObserverComponent {
     private getDiceAnimationName(roundId: number): string {
         const position = roundId % this.DICE_POSITION_NUMBER || this.DICE_POSITION_NUMBER;
         const nextPosition = (position % this.DICE_POSITION_NUMBER) + 1;
-
-        console.log("getDiceAnimationName", `s${position}-e${nextPosition}`);
         return `s${position}-e${nextPosition}`;
     }
 
@@ -108,7 +106,7 @@ export class GameResult extends ObserverComponent {
     }
 
     showResultText(result: any) {
-        const choiceWin = this.determineWinningChoice(this.calcTotalPoints(result) , result);
+        const choiceWin = this.determineWinningChoice(this.calcTotalPoints(result), result);
         this.setResultText(choiceWin.toUpperCase());
         this.setResultTextVisibility(true);
     }
@@ -117,9 +115,9 @@ export class GameResult extends ObserverComponent {
         return ["dice1", "dice2", "dice3"].map((key) => result[key]).reduce((sum, value) => sum + value, 0);
     }
 
-    determineWinningChoice(totalPoints: number , result): string {
+    determineWinningChoice(totalPoints: number, result): string {
         const values = ["dice1", "dice2", "dice3"].map((data) => result[data]);
-        const areAllEqual = values?.every(value => value === values[0]);
+        const areAllEqual = values?.every((value) => value === values[0]);
         if (areAllEqual) {
             return `${totalPoints} - ${Translator.translate("SicBo.glossary_anyTriple")}`;
         }
