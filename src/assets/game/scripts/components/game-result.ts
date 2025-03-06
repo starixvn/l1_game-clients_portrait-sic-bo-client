@@ -39,7 +39,7 @@ export class GameResult extends ObserverComponent {
     private readonly DICE_POSITION_NUMBER = 7;
     private readonly LOOP_NUMBER = 2;
     private readonly DICE_END_FRAME = 11;
-    private readonly RESULT_DURATION = 1.9;
+    private readonly RESULT_DURATION = 1.8;
     private readonly RESULT_TEXT_DELAY = 0.5;
     private readonly BIG_SMALL_THRESHOLD = 10;
 
