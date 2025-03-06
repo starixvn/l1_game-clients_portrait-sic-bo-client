@@ -24,6 +24,9 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "sicbo",
         route: "sicbo",
     },
+    websocketOptions: {
+        timeout: 3000,
+    },
     mainObserverNamespace: "SicBo",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_sicbo",
