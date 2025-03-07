@@ -36,7 +36,7 @@ export default class Game extends GameComponent {
     private audioContainer: AudioContainer = null;
     private isAnimatingResult = false;
     private prevResult: any;
-    private currentRoundId: number;
+    private currentRoundId = 0;
     private soundWinChoice = ["anyTriple", "big", "small"];
 
     onLoad() {
@@ -45,7 +45,7 @@ export default class Game extends GameComponent {
         super.onLoad();
     }
 
-    @render(Rounds.RoundStore, (store) => store.clientRoundId)
+    @render(Rounds.RoundStore, (store) => store.roundId)
     updateCurrentRoundId(roundId: number) {
         roundId > 0 && (this.currentRoundId = roundId);
     }
