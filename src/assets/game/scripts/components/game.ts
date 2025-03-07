@@ -36,18 +36,12 @@ export default class Game extends GameComponent {
     private audioContainer: AudioContainer = null;
     private isAnimatingResult = false;
     private prevResult: any;
-    private currentRoundId = 0;
     private soundWinChoice = ["anyTriple", "big", "small"];
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
 
         super.onLoad();
-    }
-
-    @render(Rounds.RoundStore, (store) => store.roundId)
-    updateCurrentRoundId(roundId: number) {
-        roundId > 0 && (this.currentRoundId = roundId);
     }
 
     @render(RoundHistories.RoundHistoryStore, (store) => store.histories)
@@ -69,11 +63,13 @@ export default class Game extends GameComponent {
             }
             this.isAnimatingResult = true;
 
+            const currentRoundId = parseInt(this.lblRoundId.string.replace("#", ""));
+
             if (hasAnimation) {
                 this.playSound("dice_shake");
-                await this.resultComp.showResultAnim(this.prevResult, result, this.currentRoundId);
+                await this.resultComp.showResultAnim(this.prevResult, result, currentRoundId);
             } else {
-                this.resultComp?.showResultNoAnim(result, this.currentRoundId);
+                this.resultComp?.showResultNoAnim(result, currentRoundId);
             }
             const winChoice = this.soundWinChoice.find((choice) => settlementResult[choice]);
             this.playSound(`${winChoice}-${gc.Translator.getLanguageId()}`);
