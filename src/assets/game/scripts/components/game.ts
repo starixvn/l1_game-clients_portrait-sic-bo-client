@@ -44,6 +44,12 @@ export default class Game extends GameComponent {
         super.onLoad();
     }
 
+    @render(Rounds.RoundStore, (store) => store.clientRoundId)
+    renderRoundId(roundId: number) {
+        // TODO: Remove this after resolving issue
+        roundId > 1 && this.lblRoundId && (this.lblRoundId.string = `#${roundId}`);
+    }
+
     @render(RoundHistories.RoundHistoryStore, (store) => store.histories)
     async updatePrevResult(histories: gc.RoundHistories.RoundHistory) {
         if (!histories) {
