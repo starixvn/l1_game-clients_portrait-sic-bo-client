@@ -17,6 +17,12 @@ interface IResultDiceFrames {
     dice3: SpriteFrame[];
 }
 
+interface IResultDice {
+    dice1: number;
+    dice2: number;
+    dice3: number;
+}
+
 @ccclass("GameResult")
 export class GameResult extends ObserverComponent {
     @property(ResultDice)
@@ -151,7 +157,7 @@ export class GameResult extends ObserverComponent {
         return Math.floor(Math.random() * max) + 1;
     }
 
-    private setResultDiceFrames(prevResult: any, result: any) {
+    private setResultDiceFrames(prevResult: IResultDice, result: IResultDice) {
         for (let i = 0; i < this.dicesComponent.length; i++) {
             const startPos = prevResult[`dice${i + 1}`];
             const endPos = result[`dice${i + 1}`];

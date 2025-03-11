@@ -63,7 +63,7 @@ export default class Game extends GameComponent {
         hasAnimation: boolean,
         settlementResult: gc.GameServiceMessage.TSettlementResult
     ) {
-        if (result) {
+        if (result && this.prevResult) {
             if (this.isAnimatingResult) {
                 return;
             }
