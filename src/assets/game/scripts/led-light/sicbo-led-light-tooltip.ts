@@ -11,7 +11,7 @@ export class SicboLedLightTooltip extends LedLightTooltip {
     @property(Layout)
     layoutResult: Layout = null;
 
-    private mainChoice = ["anyTriple", "big", "small"];
+    private readonly mainChoice = ["anyTriple", "big", "small"];
 
     public setTooltipInfo(ledLightInfo: gc.RoundHistories.RoundHistory) {
         const { roundId, result, settlementResult } = ledLightInfo;

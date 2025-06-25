@@ -55,7 +55,7 @@ export class BetDetailLogSicboItem extends BetDetailDirectBodyItem {
 
     protected calculateWinValue(data) {
         const { betDetailsLog, freeBet } = data;
-        const { amount, choice } = betDetailsLog as GameRoundBetDetailsLog & gc.BetHistory.DynamicObject<object>;
+        const { amount, choice } = betDetailsLog as GameRoundBetDetailsLog;
 
         const choiceNumber = CHOICE_TO_NUMBER[choice];
         const isChoiceSpecific = choiceNumber !== undefined;

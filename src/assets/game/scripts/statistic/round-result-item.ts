@@ -25,8 +25,8 @@ export class RoundResultItem extends Component {
     @property(SpriteAtlas)
     mainAtlas: SpriteAtlas = null;
 
-    private mainChoice = ["anyTriple", "big", "small"];
-    private choiceColors = ["ffc514", "ff4848", "3a8eff"];
+    private readonly mainChoice = ["anyTriple", "big", "small"];
+    private readonly choiceColors = ["ffc514", "ff4848", "3a8eff"];
 
     setData(data: any) {
         const { result, settlementResult } = data;

@@ -17,7 +17,9 @@ export class SpecialOdds extends ObserverComponent {
     renderOdds(roundOdds: gc.Rounds.RoundOdds) {
         const { odds, fractional } = roundOdds;
 
-        if (!this.lblSpecialOdds || !odds) return;
+        if (!this.lblSpecialOdds || !odds) {
+            return;
+        }
 
         this.lblSpecialOdds.forEach((label) => {
             if (odds[label.node.name]) {

@@ -24,7 +24,6 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "sicbo",
         route: "sicbo",
     },
-    mainObserverNamespace: "SicBo",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_sicbo",
     backgroundNoTranslate: true,
