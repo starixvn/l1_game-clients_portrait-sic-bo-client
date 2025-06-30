@@ -154,7 +154,7 @@ export class GameResult extends ObserverComponent {
     }
 
     private getRandomNumber(max: number): number {
-        return Math.floor(Math.random() * max) + 1;
+        return Math.floor(Math.random() * max) + 1; //NOSONAR
     }
 
     private setResultDiceFrames(prevResult: IResultDice, result: IResultDice) {

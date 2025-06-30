@@ -60,8 +60,8 @@ export class SicboScoreBoard extends ObserverComponent {
     onClickBigRoadWrapper() {
         if (!this.isExpandBigRoad) {
             return;
-        } else {
-            this.onClickExpandMode();
         }
+
+        this.onClickExpandMode();
     }
 }
