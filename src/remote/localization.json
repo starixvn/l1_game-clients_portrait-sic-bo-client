@@ -5,7 +5,9 @@
         "th": "Sic Bo",
         "vi": "Tài Xỉu Sic Bo",
         "zh_cn": "骰宝",
-        "zh_tw": "骰寶"
+        "zh_tw": "骰寶",
+        "ja": "シックボー",
+        "es": "Sic Bo"
     },
     "lobbyNames": {
         "en": "Sic Bo",
@@ -13,6 +15,8 @@
         "th": "Sic Bo",
         "vi": "Tài Xỉu Sic Bo",
         "zh_cn": "骰宝",
-        "zh_tw": "骰寶"
+        "zh_tw": "骰寶",
+        "ja": "シックボー",
+        "es": "Sic Bo"
     }
 }
