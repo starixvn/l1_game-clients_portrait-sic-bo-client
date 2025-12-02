@@ -3,6 +3,7 @@ import gc from "@sg/game-client-base";
 import BetDetailDirectBodyItem from "db://direct-shared-components/bet-history/scripts/bet-detail-direct-body-item";
 import { GameRoundBetDetailsLog } from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-log-item";
 import { CHOICE_TO_NUMBER, ODD_CHOICE } from "./bet-detail-sicbo-constant";
+import { formatCurrencyWithConfig } from "db://shared-components/shared/utils";
 
 const { ccclass, property } = _decorator;
 const { FormatUtils, Translator } = gc;
@@ -71,7 +72,7 @@ export class BetDetailLogSicboItem extends BetDetailDirectBodyItem {
     private setWinValue(amount: number, rawOdd: number, freeBet = false) {
         const effectiveOdds = freeBet ? rawOdd - 1 : rawOdd;
         const winningAmount = amount * effectiveOdds;
-        this.lblWin.string = FormatUtils.numberWithCommas(winningAmount, 2);
+        this.lblWin.string = formatCurrencyWithConfig(winningAmount);
         this.setHighlightTicketDetail(winningAmount > amount);
     }
 }
